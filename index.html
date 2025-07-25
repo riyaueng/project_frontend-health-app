@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Health App</title>
+  </head>
+  <body>
+    <header>
+      <section class="section_topbar">
+        <img src="./src/img/icon_green_join.svg" alt="Join Icon" />
+        <p>Join Our Personalized Nutrition Demo For Free</p>
+        <img src="./src/img/icon_arrow_white_right.svg" alt="Weißer Pfeil nach rechts" />
+      </section>
+
+      <section class="section_navbar">
+        <a href="./index.html"><img src="./src/img/logo_nutritionist_mobil.svg" alt="Nutrionist Logo" /> </a>
+
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Process</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="burger_menu">
+          <div class="burger"></div>
+          <div class="burger"></div>
+          <div class="burger"></div>
+        </div>
+      </section>
+
+      <section class="section_hero">
+        <img src="./src/img/hero_trainer_mobil.png" alt="Trainerin vor grünem Hintergrund" />
+
+        <div class="wrapper_hero_sidetext">
+          <div class="div_costumers">
+            <div class="wrapper_costumers_img">
+              <img src="./src/img/happy_costumer1.png" alt="Glückliche Kundin in Pink" />
+              <img src="./src/img/happy_costumer2.png" alt="Glücklich Kundin in hellem Grün" />
+              <img src="./src/img/happy_costumer3.png" alt="Glückliche Kundin in dunklem Grün" />
+            </div>
+            <p>430+ Happy Customers</p>
+          </div>
+
+          <div class="div_herotext">
+            <h3>Transform Your &#10084; Health with</h3>
+            <h1>Personalized Nutrition Coaching</h1>
+            <p>
+              Welcome to Nutritionist, your partner in achieving optimal health through personalized nutrition coaching.
+              Our certified nutritionists are here to guide you on your weight loss journey, providing customized plans
+              and ongoing support. Start your transformation today and experience the power of personalized nutrition
+              coaching.
+            </p>
+          </div>
+
+          <div class="div_hero_bts">
+            <a>Get Starter Today</a>
+            <a>Book a Demo</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section_features">
+        <div class="div_einleitung">
+          <h2>Features</h2>
+          <p>
+            Welcome to the Feature Section of Nutritionist, your ultimate destination for all things nutrition and
+            wellness.
+          </p>
+        </div>
+
+        <div class="div_features">
+          <div class="box_features">
+            <img src="./src/img/icon_flower.svg" alt="Blume Icon" />
+            <h3>Personalized Nutrition Plans</h3>
+            <p>
+              Receive a tailored nutrition plan designed specifically for your body and goals. Our certified
+              nutritionists will consider your unique needs, dietary preferences, and health conditions to create a plan
+              that suits you best.
+            </p>
+          </div>
+
+          <div class="box_features">
+            <img src="./src/img/icon_cutlery_cap.svg" alt="Abschlussmütze Icon" />
+            <h3>Guidance from Certified Nutritionists</h3>
+            <p>
+              Our team of experienced and certified nutritionists will provide professional guidance and support
+              throughout your journey. They will answer your questions, address your concerns, and keep you motivated as
+              you work towards your goals.
+            </p>
+          </div>
+
+          <div class="box_features">
+            <img src="./src/img/icon_cutlery_cap.svg" alt="Besteck Icon" />
+            <h3>Food Tracking and Analysis</h3>
+            <p>
+              Effortlessly track your food intake using our user-friendly app. Our nutritionists will analyze your data
+              to provide insights into your eating habits, help you identify areas for improvement, and make
+              personalized recommendations.
+            </p>
+          </div>
+
+          <div class="box_features">
+            <img src="./src/img/icon_clipboard.svg" alt="Klemmbrett Icon" />
+            <h3>Meal Planning and Recipes</h3>
+            <p>
+              Access a vast collection of delicious and healthy recipes tailored to your dietary needs. Our
+              nutritionists will also create personalized meal plans, making it easier for you to stay on track and
+              enjoy nutritious meals.
+            </p>
+          </div>
+
+          <div class="box_features">
+            <img src="./src/img/icon_dumbbell.svg" alt="Hantel Icon" />
+            <h3>Lifestyle and Behavior Coaching</h3>
+            <p>
+              Achieving sustainable results requires more than just a diet plan. Our nutritionists will work with you to
+              develop healthy habits, address emotional eating, and provide strategies to overcome obstacles along the
+              way.
+            </p>
+          </div>
+
+          <div class="box_features">
+            <img src="./src/img/icon_backpack.svg" alt="Rucksack Icon" />
+            <h3>Nutritional Education and Workshops</h3>
+            <p>
+              Expand your knowledge of nutrition through informative articles and educational workshops. Our
+              nutritionists will equip you with the knowledge and tools to make informed choices for long-term success.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_calculator">
+        <div class="div_einleitung">
+          <h2>Test your daily Calorie Requirement</h2>
+          <p>
+            To determine your daily calorie requirement, we need some information about your age, gender, weight, height
+            and activity level. Enter this information to calculate your individual requirements.
+          </p>
+        </div>
+
+        <form class="calculator">
+          <label for="size">Body size (in cm)</label>
+          <input type="text" name="size" id="size" required />
+
+          <label for="age">Age</label>
+          <input type="number" name="age" id="age" required />
+
+          <label for="weight">Weight</label>
+          <input type="text" name="weight" id="weight" required />
+
+          <label for="activity">Activity</label>
+          <input type="text" name="activity" id="activity" placeholder="Exclusively sedentary work with..." required />
+
+          <label for="gender">Gender</label>
+          <input type="checkbox" name="female" id="gender" required />
+          <input type="checkbox" name="male" id="gender" required />
+
+          <button type="submit">Calculate</button>
+        </form>
+        <div class="div_calculator_result">
+          <div>
+            <p>kcal</p>
+          </div>
+
+          <div>
+            <p>kj</p>
+          </div>
+
+          <div>
+            <p>Basal Metabolic Rate</p>
+          </div>
+
+          <div class="input_basal_kcal"></div>
+          <div class="input_basal_kj"></div>
+
+          <div>
+            <p>Total Daily Energy Expenditure</p>
+          </div>
+
+          <div class="input_daily_kcal"></div>
+          <div class="input_daily_kj"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="section_footer_nav">
+        <a href="./index.html"><img src="./src/img/logo_nutritionist_mobil.svg" alt="Nutrionist Logo" /></a>
+
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Process</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="div_go_topmenu">
+          <p>Got To Top</p>
+          <img id="go_topmenu" src="./src/img/icon_arrow_white_up.svg" alt="Weißer Pfeil nach oben" />
+        </div>
+      </section>
+
+      <section class="section_contactbar">
+        <div class="wrappe_contacts">
+          <div class="box_contact">
+            <img src="./src/img/icon_green_mail.svg" alt="Mail Icon" />
+            <p>hello@squareup.com</p>
+          </div>
+
+          <div class="box_contact">
+            <img src="./src/img/icon_green_phone.svg" alt="Telefon Icon" />
+            <p>+91 91813 23 2309</p>
+          </div>
+
+          <div class="box_contact">
+            <img src="./src/img/icon_green_pin.svg" alt="Navigationspin Icon" />
+            <p>Somewhere in the World</p>
+          </div>
+        </div>
+
+        <div class="div_copyright">
+          <p>&copy; 2023 Nutritionist. All rights reserved.</p>
+        </div>
+      </section>
+    </footer>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
