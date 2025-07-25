@@ -149,43 +149,69 @@
         </div>
 
         <form class="calculator">
-          <label for="size">Body size (in cm)</label>
-          <input type="text" name="size" id="size" required />
+          <div class="box_input">
+            <label for="size">Body size (in cm)</label>
+            <input type="number" name="size" id="size" value="170" min="120" max="250" required />
+          </div>
 
-          <label for="age">Age</label>
-          <input type="number" name="age" id="age" required />
+          <div class="box_input">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" value="25" max="140" min="1" required />
+          </div>
 
-          <label for="weight">Weight</label>
-          <input type="text" name="weight" id="weight" required />
+          <div class="box_input">
+            <label for="weight">Weight</label>
+            <input type="number" name="weight" id="weight" step="0.1" value="65" min="1" required />
+          </div>
 
-          <label for="activity">Activity</label>
-          <input type="text" name="activity" id="activity" placeholder="Exclusively sedentary work with..." required />
+          <div class="box_input">
+            <label for="activity">Activity</label>
+            <select type="text" name="activity" id="activity" placeholder="Exclusively sedentary work with..." required>
+              <option value="sleep">Schlafen</option>
+              <option value="lay">Nur Sitzen oder Liegen</option>
+              <option value="sit">
+                Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit
+              </option>
+              <option value="stand">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit</option>
+              <option value="go">Überwiegend gehende oder stehende Tätigkeit</option>
+              <option value="hard">Körperlich anstrengende berufliche Arbeit</option>
+            </select>
+          </div>
 
-          <label for="gender">Gender</label>
-          <input type="checkbox" name="female" id="gender" required />
-          <input type="checkbox" name="male" id="gender" required />
+          <div class="wrapper_gender">
+            <label for="gender">Gender</label>
+            <div class="box_gender">
+              <input type="radio" name="gender" id="female" required />
+              <label for="female">Female</label>
+            </div>
+
+            <div class="box_gender">
+              <input type="radio" name="gender" id="male" required />
+              <label for="male">Male</label>
+            </div>
+          </div>
 
           <button type="submit">Calculate</button>
         </form>
         <div class="div_calculator_result">
-          <div>
+          <div class="box_kcal">
             <p>kcal</p>
           </div>
 
-          <div>
+          <div class="box_kj">
             <p>kj</p>
           </div>
 
-          <div>
+          <div class="box_metabolic">
             <p>Basal Metabolic Rate</p>
+          </div>
+
+          <div class="box_daily_energy">
+            <p>Total Daily Energy Expenditure</p>
           </div>
 
           <div class="input_basal_kcal"></div>
           <div class="input_basal_kj"></div>
-
-          <div>
-            <p>Total Daily Energy Expenditure</p>
-          </div>
 
           <div class="input_daily_kcal"></div>
           <div class="input_daily_kj"></div>
