@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/mobile.css" />
     <title>Frontend Health App</title>
   </head>
   <body>
@@ -167,14 +168,14 @@
           <div class="box_input">
             <label for="activity">Activity</label>
             <select type="text" name="activity" id="activity" placeholder="Exclusively sedentary work with..." required>
-              <option value="sleep">Schlafen</option>
-              <option value="lay">Nur Sitzen oder Liegen</option>
-              <option value="sit">
+              <option value="0.95">Schlafen</option>
+              <option value="1.2">Nur Sitzen oder Liegen</option>
+              <option value="1.5">
                 Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit
               </option>
-              <option value="stand">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit</option>
-              <option value="go">Überwiegend gehende oder stehende Tätigkeit</option>
-              <option value="hard">Körperlich anstrengende berufliche Arbeit</option>
+              <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit</option>
+              <option value="1.9">Überwiegend gehende oder stehende Tätigkeit</option>
+              <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
             </select>
           </div>
 
@@ -193,28 +194,25 @@
 
           <button type="submit">Calculate</button>
         </form>
+
         <div class="div_calculator_result">
-          <div class="box_kcal">
-            <p>kcal</p>
+          <div class="result_header">
+            <div class="result_label"></div>
+            <div class="result_kcal">kcal</div>
+            <div class="result_kj">kJ</div>
           </div>
 
-          <div class="box_kj">
-            <p>kj</p>
+          <div class="result_row">
+            <div class="result_label">Basal Metabolic Rate</div>
+            <div class="result_value output_basal_kcal">0</div>
+            <div class="result_value output_basal_kj">0</div>
           </div>
 
-          <div class="box_metabolic">
-            <p>Basal Metabolic Rate</p>
+          <div class="result_row">
+            <div class="result_label">Total Daily Energy Expenditure</div>
+            <div class="result_value output_daily_kcal">0</div>
+            <div class="result_value output_daily_kj">0</div>
           </div>
-
-          <div class="box_daily_energy">
-            <p>Total Daily Energy Expenditure</p>
-          </div>
-
-          <div class="input_basal_kcal"></div>
-          <div class="input_basal_kj"></div>
-
-          <div class="input_daily_kcal"></div>
-          <div class="input_daily_kj"></div>
         </div>
       </section>
     </main>
@@ -264,6 +262,7 @@
         </div>
       </section>
     </footer>
-    <script type="module" src="./src/js/main.js"></script>
+
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
