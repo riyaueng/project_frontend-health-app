@@ -1,7 +1,15 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+:root {
+  font-family: "Urbanist-Variable", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  --primary-color: #cbea7b;
+  --secondary-color: #1a3129;
+  --font-color: #4c4c4d;
+  --bg-color: #fafdf2;
+  --box-bg-color: #f6fbe9;
+  --box-border-color: #f6fbe9;
+  --contact-bg-color: #234338;
+  --contact-border-color: #2c5446;
 }
 
 @font-face {
@@ -9,16 +17,113 @@
   src: url(/src/font/Urbanist-VariableFont_wght.ttf);
 }
 
-html {
-  font-size: 100%;
-  font-family: "Urbanist-Variable";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   border: 1px solid red;
   max-width: 100vw;
   min-width: 100vw;
-  padding: 0 1rem;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+/* * ------------------- Header ------------------ */
+
+header {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1rem;
+}
+
+.section_topbar {
+  background-color: var(--contact-bg-color);
+  border: 0.1rem solid var(--contact-border-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section_navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.8rem 1rem 0;
+}
+
+.section_navbar nav {
+  display: none;
+}
+
+.burger_menu {
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 0.4rem;
+}
+
+.burger_1,
+.burger_2,
+.burger_3 {
+  background-color: var(--primary-color);
+  height: 0.2rem;
+  border-radius: 0.1rem;
+}
+
+.burger_1,
+.burger_2 {
+  width: 2.4rem;
+}
+
+.burger_3 {
+  width: 1.5rem;
+}
+
+/* * ------------------- Section Hero ------------------ */
+
+.div_hero_image {
+  width: 100vw;
+}
+
+.div_customers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.wrapper_costumers_img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.wrapper_costumers_img img {
+  position: absolute;
+  width: 4rem;
+}
+
+.wrapper_costumers_img img:first-of-type {
+  top: 0;
+  left: -4.2rem;
+  z-index: 1;
+}
+
+.wrapper_costumers_img img:nth-of-type(2) {
+  top: 0;
+  left: -1.5rem;
+  z-index: 2;
+}
+
+.wrapper_costumers_img img:last-of-type {
+  top: 0;
+  left: 1.4rem;
+  z-index: 3;
 }
 
 /* * ------------------- Section Calculator ------------------ */
@@ -27,7 +132,6 @@ body {
 
 .section_calculator {
   padding: 1rem;
-  border: 1px solid green;
 }
 
 .box_input input,
