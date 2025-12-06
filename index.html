@@ -54,7 +54,7 @@
     <main>
       <section class="section_hero">
         <div class="div_hero_image">
-          <img src="./src/img/hero_trainer_mobil.png" alt="Trainerin vor grünem Hintergrund" />
+          <img src="./src/img/hero_trainer.png" alt="Trainerin vor grünem Hintergrund" />
         </div>
 
         <div class="wrapper_hero_sidetext">
@@ -76,11 +76,11 @@
               and ongoing support. Start your transformation today and experience the power of personalized nutrition
               coaching.
             </p>
-          </div>
 
-          <div class="div_hero_bts">
-            <a>Get Starter Today</a>
-            <a>Book a Demo</a>
+            <div class="div_hero_bts">
+              <a>Get Starter Today</a>
+              <a>Book a Demo</a>
+            </div>
           </div>
         </div>
       </section>
@@ -181,39 +181,41 @@
         </div>
 
         <form class="calculator">
-          <div class="box_input">
-            <label for="size">Body size (in cm)</label>
-            <input type="number" name="size" id="size" value="170" min="120" max="250" required />
-          </div>
+          <div class="wrapper_input">
+            <div class="box_input">
+              <label for="size">Body size (in cm)</label>
+              <input type="number" name="size" id="size" value="170" min="120" max="250" required />
+            </div>
 
-          <div class="box_input">
-            <label for="age">Age</label>
-            <input type="number" name="age" id="age" value="25" max="140" min="1" required />
-          </div>
+            <div class="box_input">
+              <label for="age">Age</label>
+              <input type="number" name="age" id="age" value="25" max="140" min="1" required />
+            </div>
 
-          <div class="box_input">
-            <label for="weight">Weight</label>
-            <input type="number" name="weight" id="weight" step="0.1" value="65" min="1" required />
-          </div>
+            <div class="box_input">
+              <label for="weight">Weight</label>
+              <input type="number" name="weight" id="weight" step="0.1" value="65" min="1" required />
+            </div>
 
-          <div class="box_input">
-            <label for="activity">Activity</label>
-            <div class="wrapper_select">
-              <select
-                type="text"
-                name="activity"
-                id="activity"
-                placeholder="Exclusively sedentary work with..."
-                required>
-                <option value="0.95">Schlafen</option>
-                <option value="1.2">Nur Sitzen oder Liegen</option>
-                <option value="1.5">
-                  Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit
-                </option>
-                <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit</option>
-                <option value="1.9">Überwiegend gehende oder stehende Tätigkeit</option>
-                <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
-              </select>
+            <div class="box_input">
+              <label for="activity">Activity</label>
+              <div class="wrapper_select">
+                <select
+                  type="text"
+                  name="activity"
+                  id="activity"
+                  placeholder="Exclusively sedentary work with..."
+                  required>
+                  <option value="0.95">Schlafen</option>
+                  <option value="1.2">Nur Sitzen oder Liegen</option>
+                  <option value="1.5">
+                    Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit
+                  </option>
+                  <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit</option>
+                  <option value="1.9">Überwiegend gehende oder stehende Tätigkeit</option>
+                  <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+                </select>
+              </div>
             </div>
           </div>
 
