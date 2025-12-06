@@ -1,0 +1,40 @@
+@media only screen and (min-width: 992px) {
+  /* * ------------------- Header ------------------ */
+
+  header {
+    padding: 1rem 5rem;
+  }
+
+  .section_topbar {
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+
+  .section_navbar {
+    align-items: center;
+  }
+
+  .section_navbar nav {
+    display: block;
+  }
+
+  .section_navbar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .wrapper_navbar ul li:last-child a {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-weight: 500;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+  }
+
+  .burger_menu {
+    display: none;
+  }
+}
