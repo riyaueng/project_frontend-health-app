@@ -6,9 +6,39 @@
   }
 
   .section_topbar {
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     gap: 1rem;
     font-size: 1rem;
+    padding: 0;
+  }
+
+  .wrapper_jointext {
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    min-width: 28rem;
+  }
+
+  .wrapper_jointext img {
+    width: 1.5rem;
+  }
+
+  .wrapper_jointext img:last-of-type {
+    width: 1rem;
+  }
+
+  .wrapper_abstract_lines {
+    display: block;
+    overflow: hidden;
+    max-height: 3rem;
+    padding: 0 3rem;
+  }
+
+  .wrapper_abstract_lines img {
+    object-fit: cover;
+    height: 3rem;
   }
 
   .section_navbar {
