@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <section class="section_topbar">
+      <section class="section_topbar" id="top">
         <img src="./src/img/icon_green_join.svg" alt="Join Icon" />
         <p>Join Our Personalized Nutrition Demo For Free</p>
         <img src="./src/img/icon_arrow_white_right.svg" alt="Weißer Pfeil nach rechts" />
@@ -50,11 +50,11 @@
               <img src="./src/img/happy_costumer2.png" alt="Glücklich Kundin in hellem Grün" />
               <img src="./src/img/happy_costumer3.png" alt="Glückliche Kundin in dunklem Grün" />
             </div>
-            <p>430+ Happy Customers</p>
+            <p><span>430+</span> Happy Customers</p>
           </div>
 
           <div class="div_herotext">
-            <h3>Transform Your &#10084; Health with</h3>
+            <h3>Transform Your ❤️ Health with</h3>
             <h1>Personalized Nutrition Coaching</h1>
             <p>
               Welcome to Nutritionist, your partner in achieving optimal health through personalized nutrition coaching.
@@ -72,7 +72,7 @@
       </section>
 
       <section class="section_features">
-        <div class="div_einleitung">
+        <div class="div_intro">
           <h2>Features</h2>
           <p>
             Welcome to the Feature Section of Nutritionist, your ultimate destination for all things nutrition and
@@ -92,8 +92,11 @@
           </div>
 
           <div class="box_features">
-            <img src="./src/img/icon_cutlery_cap.svg" alt="Abschlussmütze Icon" />
-            <h3>Guidance from Certified Nutritionists</h3>
+            <div class="wrapper_box_icon">
+              <img src="./src/img/icon_cutlery_cap.svg" alt="Abschlussmütze Icon" />
+              <h3>Guidance from Certified Nutritionists</h3>
+            </div>
+
             <p>
               Our team of experienced and certified nutritionists will provide professional guidance and support
               throughout your journey. They will answer your questions, address your concerns, and keep you motivated as
@@ -102,8 +105,11 @@
           </div>
 
           <div class="box_features">
-            <img src="./src/img/icon_cutlery_cap.svg" alt="Besteck Icon" />
-            <h3>Food Tracking and Analysis</h3>
+            <div class="wrapper_box_icon">
+              <img src="./src/img/icon_cutlery_cap.svg" alt="Besteck Icon" />
+              <h3>Food Tracking and Analysis</h3>
+            </div>
+
             <p>
               Effortlessly track your food intake using our user-friendly app. Our nutritionists will analyze your data
               to provide insights into your eating habits, help you identify areas for improvement, and make
@@ -112,8 +118,11 @@
           </div>
 
           <div class="box_features">
-            <img src="./src/img/icon_clipboard.svg" alt="Klemmbrett Icon" />
-            <h3>Meal Planning and Recipes</h3>
+            <div class="wrapper_box_icon">
+              <img src="./src/img/icon_clipboard.svg" alt="Klemmbrett Icon" />
+              <h3>Meal Planning and Recipes</h3>
+            </div>
+
             <p>
               Access a vast collection of delicious and healthy recipes tailored to your dietary needs. Our
               nutritionists will also create personalized meal plans, making it easier for you to stay on track and
@@ -122,8 +131,11 @@
           </div>
 
           <div class="box_features">
-            <img src="./src/img/icon_dumbbell.svg" alt="Hantel Icon" />
-            <h3>Lifestyle and Behavior Coaching</h3>
+            <div class="wrapper_box_icon">
+              <img src="./src/img/icon_dumbbell.svg" alt="Hantel Icon" />
+              <h3>Lifestyle and Behavior Coaching</h3>
+            </div>
+
             <p>
               Achieving sustainable results requires more than just a diet plan. Our nutritionists will work with you to
               develop healthy habits, address emotional eating, and provide strategies to overcome obstacles along the
@@ -132,8 +144,11 @@
           </div>
 
           <div class="box_features">
-            <img src="./src/img/icon_backpack.svg" alt="Rucksack Icon" />
-            <h3>Nutritional Education and Workshops</h3>
+            <div class="wrapper_box_icon">
+              <img src="./src/img/icon_backpack.svg" alt="Rucksack Icon" />
+              <h3>Nutritional Education and Workshops</h3>
+            </div>
+
             <p>
               Expand your knowledge of nutrition through informative articles and educational workshops. Our
               nutritionists will equip you with the knowledge and tools to make informed choices for long-term success.
@@ -143,7 +158,7 @@
       </section>
 
       <section class="section_calculator">
-        <div class="div_einleitung">
+        <div class="div_intro">
           <h2>Test your daily Calorie Requirement</h2>
           <p>
             To determine your daily calorie requirement, we need some information about your age, gender, weight, height
@@ -169,59 +184,95 @@
 
           <div class="box_input">
             <label for="activity">Activity</label>
-            <select type="text" name="activity" id="activity" placeholder="Exclusively sedentary work with..." required>
-              <option value="0.95">Schlafen</option>
-              <option value="1.2">Nur Sitzen oder Liegen</option>
-              <option value="1.5">
-                Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit
-              </option>
-              <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit</option>
-              <option value="1.9">Überwiegend gehende oder stehende Tätigkeit</option>
-              <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
-            </select>
+            <div class="wrapper_select">
+              <select
+                type="text"
+                name="activity"
+                id="activity"
+                placeholder="Exclusively sedentary work with..."
+                required>
+                <option value="0.95">Schlafen</option>
+                <option value="1.2">Nur Sitzen oder Liegen</option>
+                <option value="1.5">
+                  Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit
+                </option>
+                <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit</option>
+                <option value="1.9">Überwiegend gehende oder stehende Tätigkeit</option>
+                <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+              </select>
+            </div>
           </div>
 
           <div class="wrapper_gender">
             <label for="gender">Gender</label>
-            <div class="box_gender">
-              <input type="radio" name="gender" id="female" required />
-              <label for="female">Female</label>
-            </div>
+            <div class="wrapper_radio_bts">
+              <div class="box_gender">
+                <input type="radio" name="gender" id="female" required chec />
+                <label for="female">Female</label>
+              </div>
 
-            <div class="box_gender">
-              <input type="radio" name="gender" id="male" required />
-              <label for="male">Male</label>
+              <div class="box_gender">
+                <input type="radio" name="gender" id="male" checked required />
+                <label for="male">Male</label>
+              </div>
             </div>
           </div>
 
           <button type="submit">Calculate</button>
+
+          <div class="div_calculator_result">
+            <div class="result_header">
+              <div class="result_label"></div>
+              <div class="result_kcal">
+                <p>kcal</p>
+              </div>
+              <div class="result_kj">
+                <p>kJ</p>
+              </div>
+            </div>
+
+            <div class="result_row">
+              <div class="result_label">
+                <p>Basal Metabolic Rate</p>
+              </div>
+              <div class="result_value output_basal_kcal">
+                <p>0</p>
+              </div>
+              <div class="result_value output_basal_kj">
+                <p>0</p>
+              </div>
+            </div>
+
+            <div class="result_row">
+              <div class="result_label">
+                <p>Total Daily Energy Expenditure</p>
+              </div>
+              <div class="result_value output_daily_kcal">
+                <p>0</p>
+              </div>
+              <div class="result_value output_daily_kj">
+                <p>0</p>
+              </div>
+            </div>
+          </div>
         </form>
-
-        <div class="div_calculator_result">
-          <div class="result_header">
-            <div class="result_label"></div>
-            <div class="result_kcal">kcal</div>
-            <div class="result_kj">kJ</div>
-          </div>
-
-          <div class="result_row">
-            <div class="result_label">Basal Metabolic Rate</div>
-            <div class="result_value output_basal_kcal">0</div>
-            <div class="result_value output_basal_kj">0</div>
-          </div>
-
-          <div class="result_row">
-            <div class="result_label">Total Daily Energy Expenditure</div>
-            <div class="result_value output_daily_kcal">0</div>
-            <div class="result_value output_daily_kj">0</div>
-          </div>
-        </div>
       </section>
     </main>
 
     <footer>
       <section class="section_footer_nav">
-        <a href="./index.html"><img src="./src/img/logo_nutritionist_mobil.svg" alt="Nutrionist Logo" /></a>
+        <div class="wrapper_logo">
+          <a href="./index.html"><img src="./src/img/logo_nutritionist_mobil.svg" alt="Nutrionist Logo" /></a>
+
+          <div class="div_go_topmenu">
+            <p>Got To Top</p>
+            <div class="wrapper_circle">
+              <a href="#top">
+                <img id="go_topmenu" src="./src/img/icon_arrow_white_up.svg" alt="Weißer Pfeil nach oben" />
+              </a>
+            </div>
+          </div>
+        </div>
 
         <nav>
           <ul>
@@ -234,15 +285,10 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-
-        <div class="div_go_topmenu">
-          <p>Got To Top</p>
-          <img id="go_topmenu" src="./src/img/icon_arrow_white_up.svg" alt="Weißer Pfeil nach oben" />
-        </div>
       </section>
 
-      <section class="section_contactbar">
-        <div class="wrappe_contacts">
+      <section class="section_contact">
+        <div class="wrapper_contacts">
           <div class="box_contact">
             <img src="./src/img/icon_green_mail.svg" alt="Mail Icon" />
             <p>hello@squareup.com</p>
