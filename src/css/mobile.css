@@ -276,10 +276,6 @@ header {
 
 /*  --------- Form Calculator  --------- */
 
-.section_calculator {
-  padding: 1rem;
-}
-
 .calculator {
   border: 0.1rem solid var(--box-border-color);
   border-radius: 0.5rem;

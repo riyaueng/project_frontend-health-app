@@ -1,19 +1,19 @@
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   /* * ------------------- Header ------------------ */
 
   header {
-    padding: 1rem 5rem;
+    padding: 1rem 2rem;
   }
 
   .section_topbar {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
     font-size: 1rem;
     padding: 0;
   }
 
   .wrapper_jointext {
+    font-size: 0.8rem;
     justify-content: center;
     align-items: center;
     gap: 0.75rem;
@@ -33,7 +33,7 @@
     display: block;
     overflow: hidden;
     max-height: 3rem;
-    padding: 0 3rem;
+    padding: 0;
   }
 
   .wrapper_abstract_lines img {
@@ -73,29 +73,27 @@
   .section_hero {
     display: flex;
     justify-content: space-evenly;
-    width: 100vw;
   }
 
   .div_hero_image {
-    width: 100vw;
-    height: 120rem;
+    width: 50vw;
+    max-height: 200rem;
     overflow: hidden;
     margin-left: -1rem;
     border-bottom-left-radius: 0rem;
   }
 
   .div_hero_image img {
-    width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
   .div_herotext {
-    width: 50vw;
-    margin: 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: start;
+    padding: 0;
   }
 
   .div_herotext h1,
@@ -110,10 +108,12 @@
   }
 
   .wrapper_hero_sidetext {
+    width: 50vw;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
+    padding: 2rem;
   }
 
   .div_customers {
@@ -121,13 +121,29 @@
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
-    margin-left: 1rem;
+    margin-top: 0;
+  }
+
+  .div_customers p {
+    font-size: 0.9rem;
+  }
+
+  .wrapper_costumers_img img {
+    width: 2.2rem;
+  }
+
+  .wrapper_costumers_img img:first-of-type {
+    margin-right: -1rem;
+  }
+
+  .wrapper_costumers_img img:last-of-type {
+    margin-left: -1rem;
   }
 
   /* * ------------------- Section Features ------------------ */
 
   .section_features {
-    margin: 5rem 0;
+    margin: 5rem 0rem;
   }
 
   .div_features {
@@ -139,7 +155,7 @@
   }
 
   .box_features {
-    width: 43vw;
+    width: 45vw;
     margin-bottom: 0;
   }
 
@@ -147,11 +163,17 @@
 
   /*  --------- Form Calculator  --------- */
 
+  .section_calculator {
+    padding: 0rem;
+    margin: 0 2rem;
+  }
+
   .calculator {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .wrapper_input {
@@ -163,7 +185,7 @@
 
   .box_input input,
   .box_input select {
-    width: 43vw;
+    width: 40vw;
     display: flex;
     flex-direction: column;
   }
@@ -172,18 +194,61 @@
 
   .div_calculator_result,
   .calculator button {
-    margin: 0 auto;
+    margin: 1rem auto;
   }
 
   .div_calculator_result {
-    max-width: 60vw;
+    width: 60vw;
   }
 
   .calculator button {
     max-width: 18rem;
+    margin: 0 auto;
   }
 
   /* * ------------------- Footer ------------------ */
+  footer {
+    padding: 0 2rem 3rem;
+  }
 
   /*  --------- Section Footer Nav --------- */
+
+  footer {
+    font-size: 0.8rem;
+  }
+
+  .section_footer_nav {
+    position: relative;
+  }
+
+  .section_footer_nav nav ul {
+    justify-content: center;
+    position: absolute;
+    left: 30%;
+    top: 2.9rem;
+  }
+
+  /*  --------- Section Footer Contact --------- */
+
+  .section_contact,
+  .wrapper_contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .box_contact {
+    margin-bottom: 0;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .div_copyright {
+    text-align: center;
+  }
+
+  .box_contact img {
+    width: 0.9rem;
+  }
 }
