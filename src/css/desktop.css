@@ -1,1 +1,64 @@
-min-width: 992px;
+@media only screen and (min-width: 992px) {
+  /* * ------------------- Header ------------------ */
+
+  header {
+    padding: 1rem 5rem;
+  }
+
+  /* * ------------------- Section Hero ------------------ */
+
+  .wrapper_hero_sidetext {
+    margin-right: 2rem;
+  }
+
+  /* * ------------------- Section Features ------------------ */
+
+  .box_features {
+    width: 41vw;
+  }
+
+  /* * ------------------- Section Calculator ------------------ */
+
+  /*  --------- Form Calculator  --------- */
+
+  .section_calculator {
+    margin: 0 5rem;
+  }
+
+  .box_input input,
+  .box_input select {
+    width: 36vw;
+  }
+
+  /*  --------- Result Calculator --------- */
+
+  .div_calculator_result {
+    width: 45vw;
+  }
+
+  /* * ------------------- Footer ------------------ */
+  footer {
+    padding: 0 2rem 3rem;
+  }
+
+  /*  --------- Section Footer Nav --------- */
+
+  .section_footer_nav nav ul {
+    left: 16vw;
+  }
+
+  /*  --------- Section Footer Contact --------- */
+
+  .section_contact,
+  .wrapper_contacts {
+    gap: 1rem;
+  }
+
+  .box_contact {
+    padding: 0.5rem 1rem;
+  }
+
+  .box_contact img {
+    width: 1rem;
+  }
+}
